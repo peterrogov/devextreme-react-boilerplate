@@ -1,8 +1,9 @@
 import { dom, library } from '@fortawesome/fontawesome-svg-core';
-import {
-    faBars, faHome, faBomb, faPlus, faChartPie,
-} from '@fortawesome/free-solid-svg-icons';
-
+import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
+import { faHome } from '@fortawesome/free-solid-svg-icons/faHome';
+import { faBomb } from '@fortawesome/free-solid-svg-icons/faBomb';
+import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus';
+import { faChartPie } from '@fortawesome/free-solid-svg-icons/faChartPie';
 /**
  * Only register icons we use to display them as SVG
  * See more: https://fontawesome.com/v5.15/how-to-use/on-the-web/advanced/svg-javascript-core

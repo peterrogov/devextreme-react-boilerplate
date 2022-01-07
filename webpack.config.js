@@ -104,7 +104,9 @@ function makeConfig(env) {
                     enabled: true
                 })
                 : null,
-            new BundleStatsWebpackPlugin(),
+            new BundleStatsWebpackPlugin({
+                baseline: true
+            }),
             new HtmlWebPackPlugin({
                 template: path.resolve(__dirname, 'public/index.ejs'),
                 filename: 'index.html',
