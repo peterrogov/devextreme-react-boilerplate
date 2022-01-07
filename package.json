@@ -5,8 +5,8 @@
   "main": "src/app.tsx",
   "scripts": {
     "build": "yarn lint && webpack --env production",
-    "lint": "eslint src/**/*.ts*",
-    "lint-fix": "eslint src/**/*.ts* --fix",
+    "lint": "eslint 'src/**/*.ts*'",
+    "lint:fix": "eslint 'src/**/*.ts*' --fix",
     "dev": "webpack-dev-server --env development",
     "start": "node heroku_server.js"
   },

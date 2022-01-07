@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import AppNavDrawer from '../drawer';
-import  AppFooter from '../footer';
-import  AppNavBar from '../navbar';
+import AppFooter from '../footer';
+import AppNavBar from '../navbar';
 import './styles.scss';
 
 function AppRoot() {

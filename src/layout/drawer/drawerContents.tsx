@@ -39,7 +39,7 @@ const ListItems: ListItemData[] = [
         text: 'Bundle stats',
         icon: 'chart-pie',
         url: '/bundle-stats/',
-    },    
+    },
     {
         text: '404 Not Found',
         icon: 'bomb',

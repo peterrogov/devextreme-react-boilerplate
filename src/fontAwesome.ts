@@ -1,6 +1,6 @@
 import { dom, library } from '@fortawesome/fontawesome-svg-core';
 import {
-    faBars, faHome, faBomb, faPlus, faChartPie
+    faBars, faHome, faBomb, faPlus, faChartPie,
 } from '@fortawesome/free-solid-svg-icons';
 
 /**
