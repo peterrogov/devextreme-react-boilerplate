@@ -36,6 +36,11 @@ const ListItems: ListItemData[] = [
         url: '/',
     },
     {
+        text: 'Bundle stats',
+        icon: 'chart-pie',
+        url: '/bundle-stats/',
+    },    
+    {
         text: '404 Not Found',
         icon: 'bomb',
         url: '/this-page-does-not-exist',

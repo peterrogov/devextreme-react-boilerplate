@@ -7,7 +7,7 @@ import './styles.scss';
 function AppRoot() {
     const [drawerOpen, setDrawerOpen] = useState(false);
     return (
-        <div className="container">
+        <div className="layout-container">
             <AppNavBar onDrawerButtonClick={() => setDrawerOpen(!drawerOpen)} />
             <AppNavDrawer open={drawerOpen} />
             <AppFooter />
