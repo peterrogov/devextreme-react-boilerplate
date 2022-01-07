@@ -1,0 +1,92 @@
+@use "./variables.scss" as *;
+
+@use "../../../node_modules/devextreme/scss/widgets/generic/colors" as GenericColors with (
+    $base-font-family: $default-font-family,
+    $color: "light"
+);
+
+@use "../../../node_modules/devextreme/scss/widgets/generic/sizes" with (
+    $size: "compact",
+    $generic-base-font-size: $font-size-regular
+);
+
+// colors, specific for button
+@use "../../../node_modules/devextreme/scss/widgets/generic/button/colors" as ButtonColors with (
+    $button-normal-color: #333 // example of overriding component variables
+);
+
+@use "../../../node_modules/devextreme/scss/widgets/generic/typography";
+@use "../../../node_modules/devextreme/scss/widgets/generic/icons";
+@use "../../../node_modules/devextreme/scss/widgets/generic/widget";
+@use "../../../node_modules/devextreme/scss/widgets/generic/card";
+@use "../../../node_modules/devextreme/scss/widgets/generic/fieldset";
+@use "../../../node_modules/devextreme/scss/widgets/generic/common";
+@use "../../../node_modules/devextreme/scss/widgets/base/resizable";
+@use "../../../node_modules/devextreme/scss/widgets/base/draggable";
+@use "../../../node_modules/devextreme/scss/widgets/base/ui";
+
+// public widgets
+@use "../../../node_modules/devextreme/scss/widgets/generic/box";
+@use "../../../node_modules/devextreme/scss/widgets/generic/responsiveBox";
+@use "../../../node_modules/devextreme/scss/widgets/generic/button";
+@use "../../../node_modules/devextreme/scss/widgets/generic/buttonGroup";
+@use "../../../node_modules/devextreme/scss/widgets/generic/scrollView";
+@use "../../../node_modules/devextreme/scss/widgets/generic/checkBox";
+@use "../../../node_modules/devextreme/scss/widgets/generic/switch";
+@use "../../../node_modules/devextreme/scss/widgets/generic/tabs";
+@use "../../../node_modules/devextreme/scss/widgets/generic/navBar";
+@use "../../../node_modules/devextreme/scss/widgets/generic/validation";
+@use "../../../node_modules/devextreme/scss/widgets/generic/textBox";
+@use "../../../node_modules/devextreme/scss/widgets/generic/dropDownBox";
+@use "../../../node_modules/devextreme/scss/widgets/generic/list";
+@use "../../../node_modules/devextreme/scss/widgets/generic/textArea";
+@use "../../../node_modules/devextreme/scss/widgets/generic/numberBox";
+@use "../../../node_modules/devextreme/scss/widgets/generic/calendar";
+@use "../../../node_modules/devextreme/scss/widgets/generic/dateBox";
+@use "../../../node_modules/devextreme/scss/widgets/generic/autocomplete";
+@use "../../../node_modules/devextreme/scss/widgets/generic/loadIndicator";
+@use "../../../node_modules/devextreme/scss/widgets/generic/treeView";
+@use "../../../node_modules/devextreme/scss/widgets/generic/menu";
+@use "../../../node_modules/devextreme/scss/widgets/generic/selectBox";
+@use "../../../node_modules/devextreme/scss/widgets/generic/toolbar";
+@use "../../../node_modules/devextreme/scss/widgets/generic/popup";
+@use "../../../node_modules/devextreme/scss/widgets/generic/dropDownButton";
+@use "../../../node_modules/devextreme/scss/widgets/generic/actionSheet";
+@use "../../../node_modules/devextreme/scss/widgets/generic/tileView";
+@use "../../../node_modules/devextreme/scss/widgets/generic/toast";
+@use "../../../node_modules/devextreme/scss/widgets/generic/popover";
+@use "../../../node_modules/devextreme/scss/widgets/generic/progressBar";
+@use "../../../node_modules/devextreme/scss/widgets/generic/tooltip";
+@use "../../../node_modules/devextreme/scss/widgets/generic/slider";
+@use "../../../node_modules/devextreme/scss/widgets/generic/rangeSlider";
+@use "../../../node_modules/devextreme/scss/widgets/generic/gallery";
+@use "../../../node_modules/devextreme/scss/widgets/generic/lookup";
+@use "../../../node_modules/devextreme/scss/widgets/generic/loadPanel";
+@use "../../../node_modules/devextreme/scss/widgets/generic/tagBox";
+@use "../../../node_modules/devextreme/scss/widgets/generic/radioGroup";
+@use "../../../node_modules/devextreme/scss/widgets/generic/accordion";
+@use "../../../node_modules/devextreme/scss/widgets/generic/slideOutView";
+@use "../../../node_modules/devextreme/scss/widgets/generic/slideOut";
+@use "../../../node_modules/devextreme/scss/widgets/generic/colorBox";
+@use "../../../node_modules/devextreme/scss/widgets/generic/dataGrid";
+@use "../../../node_modules/devextreme/scss/widgets/generic/treeList";
+@use "../../../node_modules/devextreme/scss/widgets/generic/pivotGrid";
+@use "../../../node_modules/devextreme/scss/widgets/generic/contextMenu";
+@use "../../../node_modules/devextreme/scss/widgets/generic/multiView";
+@use "../../../node_modules/devextreme/scss/widgets/generic/tabPanel";
+@use "../../../node_modules/devextreme/scss/widgets/generic/fileUploader";
+@use "../../../node_modules/devextreme/scss/widgets/generic/scheduler";
+@use "../../../node_modules/devextreme/scss/widgets/generic/form";
+@use "../../../node_modules/devextreme/scss/widgets/generic/filterBuilder";
+@use "../../../node_modules/devextreme/scss/widgets/generic/drawer";
+@use "../../../node_modules/devextreme/scss/widgets/generic/htmlEditor";
+@use "../../../node_modules/devextreme/scss/widgets/generic/speedDialAction";
+@use "../../../node_modules/devextreme/scss/widgets/generic/fileManager";
+@use "../../../node_modules/devextreme/scss/widgets/generic/diagram";
+@use "../../../node_modules/devextreme/scss/widgets/generic/gantt";
+@use "../../../node_modules/devextreme/scss/widgets/generic/sortable";
+@use "../../../node_modules/devextreme/scss/widgets/generic/deferRendering";
+@use "../../../node_modules/devextreme/scss/widgets/generic/map";
+
+@use "./typography.scss" as *;
+@use "./styles.scss" as *;

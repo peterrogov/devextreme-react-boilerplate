@@ -1,0 +1,6 @@
+@use "../../themes/light/variables.scss" as *;
+@import "./font-open-sans-local.scss";
+
+.view-container-regular {
+    padding: $layout-grid-size * 3 
+}

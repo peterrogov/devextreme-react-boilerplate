@@ -1,0 +1,47 @@
+@use "../../themes/light/variables.scss" as *;
+
+.navbar {
+    height: $header-height;
+    min-height: $header-height;
+    max-height: $header-height;
+    box-sizing: border-box;
+
+    .dx-toolbar-items-container {
+        height: 100%;
+    }
+
+    .drawer-toggle {
+        padding-left: $layout-grid-size * 2;
+        padding-right: $layout-grid-size * 2;
+
+        .dx-button {
+            padding: 4px;
+
+            .dx-button-content {
+                padding: 0;
+                width: 36px;
+                height: 36px;
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .dx-icon {
+            font-size: 20px;
+        }
+
+        .dx-state-hover,
+        .dx-state-active,
+        .dx-state-focused {
+            border-radius: 50%;
+        }
+    }
+
+    .logo {
+        font-weight: 600;
+        margin-left: $layout-grid-size * 3;
+        max-width: unset !important;
+    }
+}

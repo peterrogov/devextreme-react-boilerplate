@@ -1,0 +1,13 @@
+[data-view="not-found"] {
+    .container {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        padding: 20px 40px;
+        text-align: center;
+    }
+}

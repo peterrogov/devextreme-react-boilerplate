@@ -1,0 +1,29 @@
+@use "../../themes/light/variables.scss" as *;
+
+[data-view="home"] {
+    .logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .logo-dx {
+            height: 35px;
+            margin-right: 20px;
+        }
+
+        .logo-react {
+            height: 70px;
+            margin-right: 8px;
+        }
+
+        .logo-webpack {
+            height: 90px;
+        }            
+    }
+
+    .content {
+        padding: $layout-grid-size $layout-grid-size * 2;
+        max-width: 800px;
+    }
+}

@@ -1,0 +1,19 @@
+@use "../../themes/light/variables.scss" as *;
+
+footer {
+    height: $footer-height;
+    min-height: $footer-height;
+    max-height: $footer-height;
+
+    font-size: $font-size-sm;
+    line-height: 1;
+
+    display: flex;
+    padding: calc($layout-grid-size/2) $layout-grid-size;
+    background-color: #363640;
+    box-sizing: border-box;
+    color: #bbb;
+    a {
+        color: #bbb;
+    }
+}

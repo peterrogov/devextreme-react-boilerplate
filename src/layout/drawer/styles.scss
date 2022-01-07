@@ -1,0 +1,57 @@
+@use "../../themes/light/variables.scss" as *;
+
+main#content {
+    display: flex;
+    flex-grow: 1;
+    background-color: $content-background-color;
+    max-height: calc(100vh - $header-height - $footer-height);
+    overflow: auto;
+}
+
+#drawer-main {
+    .dx-drawer-content {
+        display: flex;
+    }
+
+    .drawer-content {
+        height: 100%;
+        width: 200px;
+        background-color: #363640;
+
+        .dx-list-item {
+            height: 50px;
+        }
+
+        .dx-list-item-content {
+            padding: $layout-grid-size;
+        }
+
+        .dx-list-item:not(:first-child) {
+            border-top: 1px solid #515159;
+        }
+
+        .item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-size: 14px;
+
+            .icon {
+                margin-right: $layout-grid-size * 2;
+            }
+
+            .fa-1x.icon {
+                font-size: 1.2em;
+            }
+
+            .text {
+                display: block;
+            }
+        }
+
+        .item.item-active {
+            color: #ff5722;
+        }
+    }
+}

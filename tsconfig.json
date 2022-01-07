@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "outDir": "./build/",
+        "noImplicitAny": true,
+        "module": "es6",
+        "sourceRoot": "src/",
+        "strict": true,
+        "target": "ES2018",
+        "jsx": "react-jsx",
+        "sourceMap": true,
+        "allowJs": true,
+        "moduleResolution": "node"
+    }
+}

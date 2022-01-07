@@ -1,0 +1,9 @@
+@use "./variables.scss" as *;
+
+html,
+body {
+    font-family: $default-font-family;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-regular;
+}
+

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+  <title>DevExtreme + React + webpack boilerplate</title>
+  <!-- app styles -->
+  <% for (key in htmlWebpackPlugin.files.css) { %>
+    <link 
+      rel="stylesheet" 
+      href="<%= htmlWebpackPlugin.files.css[key] %>" 
+      <% if (htmlWebpackPlugin.files.cssIntegrity) { %>
+      integrity="<%= htmlWebpackPlugin.files.cssIntegrity[key] %>" 
+      crossorigin="<%= webpackConfig.output.crossOriginLoading %>" 
+      <% } %>
+    />      
+  <% } %>  
+  <!-- /app styles -->
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- app scripts -->
+  <% for (key in htmlWebpackPlugin.files.js) { %>
+    <% if (htmlWebpackPlugin.files.jsIntegrity) { %>
+      <script 
+        src="<%= htmlWebpackPlugin.files.js[key] %>" 
+        type="text/javascript" 
+        integrity="<%= htmlWebpackPlugin.files.jsIntegrity[key] %>" 
+        crossorigin="<%= webpackConfig.output.crossOriginLoading %>"
+      ></script>
+    <% } else { %>
+      <script 
+        src="<%= htmlWebpackPlugin.files.js[key] %>" 
+        type="text/javascript">
+      </script>
+    <% } %>
+  <% } %>
+  <!-- /app scripts -->
+</body>
+
+</html>
