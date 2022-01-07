@@ -13,46 +13,52 @@ export interface ListItemData {
 }
 
 interface ListItemProps {
-    index: number;
     data: ListItemData;
 }
 
-const ListItem = (props: ListItemProps) => {
+function ListItem(props: ListItemProps) {
     const location = useLocation();
+    const { data } = props;
     return (
-        <div className={classNames('item', (props.data.url && matchPath(props.data.url, location.pathname)) && 'item-active')}>
-            {props.data.icon && (
-                <FontAwesomeIcon className='icon' size='1x' color={props.data.iconColor} icon={props.data.icon} />
+        <div className={classNames('item', (data.url && matchPath(data.url, location.pathname)) && 'item-active')}>
+            {data.icon && (
+                <FontAwesomeIcon className="icon" size="1x" color={data.iconColor} icon={data.icon} />
             )}
-            <span className='text'>{props.data.text}</span>
+            <span className="text">{data.text}</span>
         </div>
-    )
+    );
 }
 
 const ListItems: ListItemData[] = [
     {
-        text: "Home",
-        icon: "home",
-        url: "/"
+        text: 'Home',
+        icon: 'home',
+        url: '/',
     },
     {
-        text: "404 Not Found",
-        icon: "bomb",
-        url: "/this-page-does-not-exist"
-    }
+        text: '404 Not Found',
+        icon: 'bomb',
+        url: '/this-page-does-not-exist',
+    },
 ];
 
-const NavigationList = () => {
+function NavigationList() {
     const navigate = useNavigate();
+    const onItemClick = (url?: string) => {
+        if (url) {
+            navigate(url);
+        }
+    };
+
     return (
         <nav className="drawer-content">
             <List
                 className="panel-list"
-                onItemClick={(e) => { e.itemData?.url && navigate(e.itemData.url) }}
+                onItemClick={(e) => onItemClick(e.itemData?.url)}
                 itemComponent={ListItem}
                 dataSource={ListItems}
-                hoverStateEnabled={true}
-                activeStateEnabled={true}
+                hoverStateEnabled
+                activeStateEnabled
                 focusStateEnabled={false}
             />
 

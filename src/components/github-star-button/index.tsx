@@ -1,4 +1,4 @@
-export const GithubStarButon = () => {
+function GithubStarButon() {
     return (
         <iframe
             src="https://ghbtns.com/github-btn.html?user=peterrogov&repo=devextreme-react-boilerplate&type=star&count=true&size=large"
@@ -6,7 +6,9 @@ export const GithubStarButon = () => {
             scrolling="0"
             width="170"
             height="30"
-            title="GitHub">
-        </iframe>
-    )
+            title="GitHub"
+        />
+    );
 }
+
+export default GithubStarButon;

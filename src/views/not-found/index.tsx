@@ -1,6 +1,6 @@
-import "./styles.scss";
+import './styles.scss';
 
-export const NotFoundView = () => {
+function NotFoundView() {
     return (
         <div data-view="not-found">
             <div className="container">
@@ -11,5 +11,7 @@ export const NotFoundView = () => {
             </div>
         </div>
 
-    )
+    );
 }
+
+export default NotFoundView;
