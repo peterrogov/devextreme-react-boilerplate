@@ -6,7 +6,8 @@
   "scripts": {
     "build-theme-light": "npx -p devextreme-cli devextreme build-theme --input-file=\"src/themes/light/metadata.json\"",
     "build": "webpack --env production",
-    "serve": "webpack-dev-server --env development"
+    "dev": "webpack-dev-server --env development",
+    "start": "node heroku_server.js"
   },
   "author": "Peter Rogov",
   "license": "MIT",
@@ -25,6 +26,7 @@
     "bundle-stats-webpack-plugin": "^3.2.2",
     "css-loader": "^6.5.1",
     "date-fns-tz": "^1.2.2",
+    "express": "^4.17.2",
     "html-webpack-plugin": "^5.5.0",
     "javascript-obfuscator": "^3.0.0",
     "mini-css-extract-plugin": "^2.4.5",
