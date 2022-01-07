@@ -26,4 +26,12 @@
         padding: $layout-grid-size $layout-grid-size * 2;
         max-width: 800px;
     }
+
+    .accordion {
+        h3 {
+            margin: 0;
+            font-weight: $font-weight-light;
+            font-size: $font-size-xl;
+        }
+    }
 }

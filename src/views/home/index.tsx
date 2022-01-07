@@ -1,10 +1,12 @@
+import Accordion, { Item } from 'devextreme-react/accordion';
+import ReactMarkdown from 'react-markdown';
 import dxLogo from '../../themes/light/images/dxLogo.svg';
 import reactLogo from '../../themes/light/images/reactLogo.svg';
 import webpackLogo from '../../themes/light/images/webpackLogo.svg';
-import ReactMarkdown from 'react-markdown';
+import introText from './intro.md';
+import licenseText from './license.md';
+import overviewText from './overview.md';
 import './styles.scss';
-import readmeText from './readme.md';
-
 
 export const HomeView = () => {
     return (
@@ -16,7 +18,15 @@ export const HomeView = () => {
                     <img className='logo-react' src={reactLogo} />
                     <img className='logo-webpack' src={webpackLogo} />
                 </div>
-                <ReactMarkdown>{readmeText}</ReactMarkdown>
+                <ReactMarkdown>{introText}</ReactMarkdown>
+                <Accordion className='accordion' itemTitleRender={({ title }) => (<h3>{title}</h3>)}>
+                    <Item title="Overview">
+                        <ReactMarkdown>{overviewText}</ReactMarkdown>
+                    </Item>
+                    <Item title="License">
+                        <ReactMarkdown>{licenseText}</ReactMarkdown>
+                    </Item>
+                </Accordion>
             </div>
         </div>
     )
