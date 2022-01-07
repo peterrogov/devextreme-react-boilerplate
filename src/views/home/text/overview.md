@@ -1,5 +1,5 @@
 Here's a brief overview of what's under the hood
-- The app _**does not**_ use `create-react-app`. Instead it is made from scratch by making a fresh package with yarn and adding everything else.
+- The app _**does not**_ use `create-react-app` or `react-scripts`. Instead it is made from scratch by making a fresh package with yarn and adding everything else.
 - Made with [TypeScript 4](https://www.typescriptlang.org/)
 - Made with [DevExtreme 21.2](https://js.devexpress.com/) 
 - Made with [Webpack 5](https://webpack.js.org/)

@@ -1,21 +1,30 @@
-import Accordion, { Item } from 'devextreme-react/accordion';
+import Accordion from 'devextreme-react/accordion';
 import ReactMarkdown from 'react-markdown';
 import dxLogo from '../../themes/light/images/dxLogo.svg';
 import reactLogo from '../../themes/light/images/reactLogo.svg';
 import webpackLogo from '../../themes/light/images/webpackLogo.svg';
-import introText from './intro.md';
-import licenseText from './license.md';
-import overviewText from './overview.md';
+import content from './content';
 import './styles.scss';
 
 interface ItemTitleProps {
     title: string;
 }
 
+interface ItemProps {
+    data: {
+        content: string;
+    }
+}
+
 function ItemTitle({ title }: ItemTitleProps) {
     return (
         <h3>{title}</h3>
     );
+}
+
+function ItemContent(props: ItemProps) {
+    const { data } = props;
+    return <ReactMarkdown>{data.content}</ReactMarkdown>;
 }
 
 function HomeView() {
@@ -28,15 +37,13 @@ function HomeView() {
                     <img alt="react logo" className="logo-react" src={reactLogo} />
                     <img alt="webpack logo" className="logo-webpack" src={webpackLogo} />
                 </div>
-                <ReactMarkdown>{introText}</ReactMarkdown>
-                <Accordion className="accordion" itemTitleRender={ItemTitle}>
-                    <Item title="Overview">
-                        <ReactMarkdown>{overviewText}</ReactMarkdown>
-                    </Item>
-                    <Item title="License">
-                        <ReactMarkdown>{licenseText}</ReactMarkdown>
-                    </Item>
-                </Accordion>
+                <ReactMarkdown>{content.intro}</ReactMarkdown>
+                <Accordion
+                    className="accordion"
+                    itemTitleRender={ItemTitle}
+                    itemComponent={ItemContent}
+                    dataSource={content.sections}
+                />
             </div>
         </div>
     );
