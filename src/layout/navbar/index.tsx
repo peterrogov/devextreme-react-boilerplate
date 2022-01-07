@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from 'devextreme-react/button';
 import Toolbar, { Item } from 'devextreme-react/toolbar';
+import { GithubStarButon } from '../../components/github-star-button';
 import './styles.scss';
 
 export interface AppNavBarProps {
@@ -20,6 +21,9 @@ export const AppNavBar = (props: AppNavBarProps) => {
                 text="DevExtreme Boilerplate"
                 cssClass={'logo'}
             />
+            <Item location="after">
+                <GithubStarButon />
+            </Item>
         </Toolbar>
     )
 }
