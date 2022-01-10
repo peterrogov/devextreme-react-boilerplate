@@ -1,6 +1,6 @@
 First of all, thank you all authors and teams of all projects/packages/dependencies that this project is built with. Your work is greatly appreciated!
 
-Apart from the official docs, I find the following articles, guides and docs particularly helpful in making this app and I thank everyone who published them. Kudos! The least I can do is to give them credit.
+The following articles, guides and docs helped a lot in making this app and I thank everyone who published them. Kudos! 
 
 - DevExtreme
   - [Add DevExtreme to a React Application
